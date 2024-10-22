@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+.extesnion {
+  z-index: 2 !important;
+  margin: 5px !important;
+  padding: 5px;
+  color: black;
+  top: 0px !important;
+  right: 0px !important;
+  position: absolute !important;
+  max-width: 350px !important;
+  min-height: 450px !important;
+  /* background-color: #24292f; */
+  font-family: var(--font-second);
+  border: 1.5px dashed #cf222e;
+  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.3px);
+  -webkit-backdrop-filter: blur(6.3px);
+}
+
+:root {
+  --font-main: "Roboto", sans-serif;
+  --font-second: "Poppins", sans-serif;
+  --background: white;
+}
+
+/* utility  */
+.flex {
+  display: flex;
+  align-items: center;
+}
+.title-close {
+  justify-content: space-between;
+}
+.h1-title {
+  background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.h1-center {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.scrape {
+  flex-direction: column;
+  gap: 30px;
+}
+.main-title-price {
+  gap: 25px;
+  margin-bottom: 10px;
+}
+
+.special-price {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product-img {
+  height: auto;
+  max-width: 150px !important;
+  max-height: 150px !important;
+}
+
+/* client-info */
+
+.client-info {
+  flex-direction: column;
+
+  padding-bottom: auto;
+}
+
+.client-input {
+  border: none;
+  min-width: 17rem;
+  padding: 8px 8px 8px;
+  outline: 1px solid black;
+  user-select: none;
+  background: linear-gradient(130deg, #000000, #000000 41.07%, #000000 76.05%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.close-submit {
+  margin-top: 20px;
+}
+.close-submit a {
+  text-decoration: none !important;
+  padding: 10px 10px 10px;
+  color: white !important;
+  font-family: var(--font-second) !important;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.51);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.8px);
+  -webkit-backdrop-filter: blur(2.8px);
+}
+
+/* remove arrow from input */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.hide-everything {
+  display: none;
+}
+.input-label {
+  outline: none;
+  width: 75%;
+  font-size: 12px;
+  margin-bottom: 5px;
+  text-align: left;
+  padding: 0 !important;
+  border: none;
+  min-width: 17rem;
+  user-select: none;
+  background: linear-gradient(130deg, #000000, #000000 41.07%, #000000 76.05%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.correct {
+  outline: 1px solid #2ba640 !important;
+}
+.invalid {
+  outline: 1px solid #ca0303 !important;
+}

@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 500px;
+}
+body {
+  min-width: 370px;
+  min-height: 400px;
+  /* From https://css.glass */
+  background: var(--black);
+  backdrop-filter: blur(7.6px);
+  /* -webkit-backdrop-filter: blur(7.6px); */
+}
+
+:root {
+  --white: white;
+  --heading-font: "Poppins", sans-serif;
+  --black: #2d2723;
+  --dark-black: black;
+  --pink: #e42661;
+  --salety: #8a8f8f;
+  --brown: #a97a58;
+}
+/* utilities */
+a {
+  text-decoration: none !important;
+}
+.flex {
+  display: flex;
+}
+.hidden {
+  display: none;
+  
+}
+
+/* main start here  */
+.extension {
+  /* From https://css.glass */
+
+  color: var(--white);
+  font-family: var(--heading-font);
+  padding: 20px 0 0px;
+}
+.title {
+}
+.title h2 {
+  font-size: 1.5rem;
+
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.info {
+  justify-content: flex-start;
+  margin-bottom: 3px;
+  padding: 5px 3px 5px;
+  background-image: url(./Rectangle1.svg);
+  object-fit: contain;
+
+
+
+}
+.info:hover {
+  cursor: pointer;
+  opacity: 100%;
+  /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+}
+.info img {
+  min-width: 55px;
+  max-width: 55px;
+  max-height: 49px;
+  min-height: 49px;
+  /* border-radius:75% ; */
+  margin-right: 20px;
+  object-fit:scale-down;
+}
+.title-desc {
+  color: var(--black);
+}
+.title-desc h2 {
+  color: var(--white);
+  opacity: 90%;
+}
+.title-desc h3 {
+  color: var(--salety);
+}
+
+.buttons {
+  text-decoration: none;
+  margin: 3px 5px 3px;
+}
+
+/* Delete btn code start here  */
+
+/* buy now button animation start here */
+.buy-now {
+  margin: 10px;
+  padding: 8px 12px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 500;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buy-now:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.buy-now:active {
+  transform: scale(0.95);
+}
+/* ///////////////////////// */

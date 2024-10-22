@@ -1,0 +1,24 @@
+{
+  "name": "Price Tracker",
+  "version": "0.0.1",
+  "description": "Track prices of your products on FLIPKART & AMAZON (india), when prices goes down you will get notification",
+
+  "manifest_version": 3,
+
+  "icons": { "120": "./icons/icon-120x120.png" },
+
+  "host_permissions": ["https://*.flipkart.com/*", "https://*.amazon.in/*"],
+  "permissions": ["tabs", "scripting", "storage", "notifications"],
+  "action": { "default_popup": "popup.html" },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["style.css"],
+      "js": ["frontend.js", "backend.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
